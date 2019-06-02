@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.FragmentWeather">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="202dp"
+                android:layout_height="202dp" tools:src="@tools:sample/avatars" android:id="@+id/imgTiempo"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="104dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="104dp"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDia"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="68dp" android:id="@+id/tvTemp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/imgTiempo" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:textSize="36sp" android:typeface="monospace"
+                android:textAlignment="center" app:layout_constraintHorizontal_bias="0.498" android:text="27ºC"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/tvDesc"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTemp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp" android:textSize="30sp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.13999999"
+                android:text="Soleado"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDia"
+                app:layout_constraintBottom_toTopOf="@+id/imgTiempo"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="32dp" android:textSize="30sp"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
